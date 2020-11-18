@@ -1,2 +1,2 @@
 # please-codelabs
-Final state after going through each codelab
+This repo contains the reference for each of the [Please codelabs](https://please.build)!
