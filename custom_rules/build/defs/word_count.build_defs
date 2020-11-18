@@ -1,0 +1,12 @@
+def word_count(name:str, file:str, wc_tool:str=CONFIG.WORD_COUNT_TOOL) -> str:
+    return genrule(
+        name = name,
+        srcs = [file],
+        outs = [f"{name}.wc"],
+        cmd = "$TOOLS_WC $SRC > $OUT",
+        tools = {
+            "WC": [wc_tool],
+        }
+    )
+
+CONFIG.setdefault('WORD_COUNT_TOOL', 'wc')
