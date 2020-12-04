@@ -2,6 +2,7 @@ go_library(
     name = "greetings",
     srcs = ["greetings.go"],
     visibility = ["//src/..."],
+    labels = ["my_label"],
 )
 
 go_test(
