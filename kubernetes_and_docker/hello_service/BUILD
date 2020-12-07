@@ -1,5 +1,5 @@
-go_binary(
+python_binary(
     name = "hello_service",
-    srcs = ["main.go"],
+    main = "main.py",
     visibility = ["//hello_service/..."],
 )

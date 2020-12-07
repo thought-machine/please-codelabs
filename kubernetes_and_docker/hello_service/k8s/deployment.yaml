@@ -19,4 +19,4 @@ spec:
         image: //hello_service/k8s:image
         ports:
           # This must match the port we start the server on in hello-service/main.go
-          - containerPort: 8080
+          - containerPort: 8000
