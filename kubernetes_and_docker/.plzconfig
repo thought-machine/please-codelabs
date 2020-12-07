@@ -15,3 +15,8 @@ importpath = github.com/thought-machine/please-codelabs/k8s
 
 [buildconfig]
 default-docker-repo = please-example
+
+[alias "deploy"]
+cmd = run sequential --include docker-build --include k8s-push
+; Enable tab completion for build labels
+positionallabels = true
