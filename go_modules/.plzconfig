@@ -1,0 +1,2 @@
+[proto]
+ProtocGoPlugin = //third_party/go:protoc-gen-go
