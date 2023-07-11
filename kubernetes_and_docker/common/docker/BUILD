@@ -1,4 +1,4 @@
-subinclude("///pleasings//docker")
+subinclude("///docker//build_defs:docker")
 
 docker_image(
     name = "base",

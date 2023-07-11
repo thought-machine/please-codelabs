@@ -1,3 +1,3 @@
-module github.com/thought-machine/please-codelabs/k8s
+module github.com/exmaple/module
 
-go 1.14
+go 1.20

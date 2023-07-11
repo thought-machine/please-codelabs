@@ -1,5 +1,3 @@
-subinclude("///pleasings//docker", "///pleasings//k8s")
-
 docker_image(
     name = "image",
     srcs = ["//hello_service"],
@@ -13,5 +11,5 @@ k8s_config(
         "deployment.yaml",
         "service.yaml",
     ],
-    containers = ["//hello_service/k8s:image"],
+    containers = [":image"],
 )
