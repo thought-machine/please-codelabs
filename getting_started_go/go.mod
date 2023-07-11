@@ -1,3 +1,3 @@
-module example_module
+module github.com/example/module
 
-go 1.14
+go 1.20

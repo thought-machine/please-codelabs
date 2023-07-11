@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"example_module/src/greetings"
+	"github.com/example/module/src/greetings"
 )
 
-func main(){
+func main() {
 	fmt.Printf("%s, world!\n", greetings.Greeting())
 }
