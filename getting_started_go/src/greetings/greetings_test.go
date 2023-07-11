@@ -3,9 +3,9 @@ package greetings_test
 import (
 	"testing"
 
-	"github.com/go-playground/assert"
+	"github.com/stretchr/testify/assert"
 
-	"example_module/src/greetings"
+	"github.com/example/module/src/greetings"
 )
 
 func TestGreeting(t *testing.T) {

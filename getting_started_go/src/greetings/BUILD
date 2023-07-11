@@ -2,7 +2,6 @@ go_library(
     name = "greetings",
     srcs = ["greetings.go"],
     visibility = ["//src/..."],
-    labels = ["my_label"],
 )
 
 go_test(
@@ -10,7 +9,8 @@ go_test(
     srcs = ["greetings_test.go"],
     deps = [
         ":greetings",
-        "//third_party/go:assert",
+        # Could use a subrepo label i.e. ///third_party/go/github.com_stretchr_testify//assert instead if we want
+        "//third_party/go:testify",
     ],
     external = True,
 )
