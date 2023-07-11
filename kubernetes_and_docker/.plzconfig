@@ -1,0 +1,21 @@
+[please]
+version = >=17.0.0
+
+[parse]
+preloadsubincludes = ///go//build_defs:go
+preloadsubincludes = ///shell//build_defs:shell
+preloadsubincludes = ///docker//build_defs:docker
+preloadsubincludes = ///k8s//build_defs:k8s
+
+[Plugin "go"]
+Target = //plugins:go
+GoTool = //third_party/go:toolchain|go
+
+[Plugin "shell"]
+Target = //plugins:shell
+
+[Plugin "docker"]
+Target = //plugins:docker
+
+[Plugin "k8s"]
+Target = //plugins:k8s
